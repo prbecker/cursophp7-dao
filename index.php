@@ -20,13 +20,20 @@
 	//$usuario->login("root", "!@#$");
 	//echo $usuario;
 
-	//criando um novo usuario
+	//criar um novo usuario
 	//$aluno = new Usuario("aluno", "@lun0");
 	//$aluno->insert();
 	//echo $aluno;
 
+	//alterar usuario
+	//$usuario = new Usuario();
+	//$usuario->loadById(19);
+	//$usuario->update("professor", "!@#$%&*");
+	//echo $usuario;
+
+	//deletar usuario
 	$usuario = new Usuario();
 	$usuario->loadById(19);
-	$usuario->update("professor", "!@#$%&*");
+	$usuario->delete();
 	echo $usuario;
 ?>
